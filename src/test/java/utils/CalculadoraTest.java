@@ -22,6 +22,20 @@ public class CalculadoraTest {
   }
   
   @Test
+  public void shouldSumTwoNumbers2(){
+	  System.out.println ("CalculadoraTest.shouldSumTwoNumbers2");
+	  int result = calc.soma(1, 3);
+	  Assert.assertEquals(result,4);
+  }
+  
+  @Test
+  public void shouldSumTwoNumbers3(){
+	  System.out.println ("CalculadoraTest.shouldSumTwoNumbers3");
+	  int result = calc.soma(1, 3);
+	  Assert.assertEquals(result,4);
+  }
+  
+  @Test
   public void shouldNotPass(){
 	  System.out.println ("CalculadoraTest.shouldNotPass");
 	  int result = calc.soma(1, 1);

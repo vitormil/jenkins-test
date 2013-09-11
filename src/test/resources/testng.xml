@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Run classes in Parallel" verbose="1" parallel="classes" thread-count="5">
+<suite name="MySuite" verbose="1" parallel="classes" thread-count="5">
   <test name="MyTests">
 	<packages>
 	    <package name="test.java.*">

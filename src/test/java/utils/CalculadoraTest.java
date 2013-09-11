@@ -39,14 +39,14 @@ public class CalculadoraTest {
   public void shouldNotPass(){
 	  System.out.println ("CalculadoraTest.shouldNotPass");
 	  int result = calc.soma(1, 1);
-	  Assert.assertEquals(result,30);
+	  Assert.assertEquals(result,2);
   }
   
   @Test
   public void shouldNotPass2(){
 	  System.out.println ("CalculadoraTest.shouldNotPass2");
 	  int result = calc.soma(1, 1);
-	  Assert.assertEquals(result,30);
+	  Assert.assertEquals(result,2);
   }
   
   @Test

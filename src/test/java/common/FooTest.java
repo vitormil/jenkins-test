@@ -58,14 +58,14 @@ public class FooTest {
 
   @Test
   public void shouldSumTwoNumbers(){
-	  System.out.println ("shouldSumTwoNumbers - FooTest");
+	  System.out.println ("FooTest.shouldSumTwoNumbers");
 	  int result = calc.soma(1, 3);
 	  Assert.assertEquals(result,4);
   }
   
   @Test
   public void shouldSumNegativeNumbers(){
-	  System.out.println ("shouldSumNegativeNumbers - FooTest");
+	  System.out.println ("FooTest.shouldSumNegativeNumbers");
 	  int result = calc.soma(-34, -16);
 	  Assert.assertEquals(result,-50);
   }

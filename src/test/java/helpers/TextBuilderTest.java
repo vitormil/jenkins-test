@@ -15,6 +15,7 @@ public class TextBuilderTest {
 
   @Test
   public void shouldJoinTwoStrings(){
+	  System.out.println ("TextBuilderTest.shouldJoinTwoStrings");
 	  String result = textBuilder.join("a", "b");
 	  Assert.assertEquals(result, "a b");
   }

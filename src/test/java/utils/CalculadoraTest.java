@@ -14,14 +14,23 @@ public class CalculadoraTest {
 	  calc = new Calculadora();
   }
 
-  @Test(groups={"sanity"})
+  @Test
   public void shouldSumTwoNumbers(){
+	  System.out.println ("CalculadoraTest.shouldSumTwoNumbers");
 	  int result = calc.soma(1, 3);
 	  Assert.assertEquals(result,4);
   }
   
   @Test
+  public void shouldSumBigNumbers(){
+	  System.out.println ("CalculadoraTest.shouldSumBigNumbers");
+	  int result = calc.soma(1000, 3000);
+	  Assert.assertEquals(result,4000);
+  }
+  
+  @Test
   public void shouldSumNegativeNumbers(){
+	  System.out.println ("CalculadoraTest.shouldSumNegativeNumbers");
 	  int result = calc.soma(-34, -16);
 	  Assert.assertEquals(result,-50);
   }

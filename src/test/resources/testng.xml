@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Run classes in Parallel" verbose="1" parallel="classes" thread-count="5">
+  <test name="General Tests">
+  	<packages>
+  		<package name="test.java.*">
+  			<exclude name=".*common.*"></exclude>
+  		</package>
+  	</packages>
+  </test>
+</suite>
+
+
+
+<!-- 
+    <classes>
+      <class name="test.java.CalculadoraTest"/>
+      <class name="test.java.TextBuilderTest"/>
+      <class name="test.java.FooTest">
+		<methods>
+	  	 	<include name="shouldSumNegativeNumbers"></include>
+		</methods>
+	  </class>      
+    </classes>
+-->

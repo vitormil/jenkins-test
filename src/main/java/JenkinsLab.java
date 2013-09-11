@@ -3,7 +3,8 @@
  */
 package main.java;
 
-import main.java.utils.*;
+import main.java.helpers.TextBuilder;
+import main.java.utils.Calculadora;
 
 /**
  * @author voliveira
@@ -17,6 +18,10 @@ public class JenkinsLab {
 	public static void main(String[] args) {
 		Calculadora calc = new Calculadora();
 		int valor = calc.soma(1, 3);
-		System.out.println ("Hello World. Resultado: " + String.valueOf(valor));
+		
+		TextBuilder textBuilder = new TextBuilder();	
+		String fullName = textBuilder.join("Vitor", "Oliveira");
+		
+		System.out.println ("Hello " + fullName + " => " + String.valueOf(valor));
 	}
 }

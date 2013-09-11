@@ -39,7 +39,7 @@ public class CalculadoraTest {
   public void shouldNotPass(){
 	  System.out.println ("CalculadoraTest.shouldNotPass");
 	  int result = calc.soma(1, 1);
-	  Assert.assertNotEquals(result,3);
+	  Assert.assertNotEquals(result,30);
   }
   
   @Test

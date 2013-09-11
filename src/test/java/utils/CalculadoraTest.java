@@ -43,10 +43,24 @@ public class CalculadoraTest {
   }
   
   @Test
+  public void shouldNotPass2(){
+	  System.out.println ("CalculadoraTest.shouldNotPass2");
+	  int result = calc.soma(1, 1);
+	  Assert.assertEquals(result,30);
+  }
+  
+  @Test
   public void shouldSumBigNumbers(){
 	  System.out.println ("CalculadoraTest.shouldSumBigNumbers");
 	  int result = calc.soma(1000, 3000);
 	  Assert.assertEquals(result,4000);
+  }
+  
+  @Test
+  public void shouldSumBigNumbers2(){
+	  System.out.println ("CalculadoraTest.shouldSumBigNumbers2");
+	  int result = calc.soma(10000, 30000);
+	  Assert.assertEquals(result,40000);
   }
   
   @Test
